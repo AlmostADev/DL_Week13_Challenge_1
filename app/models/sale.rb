@@ -1,10 +1,7 @@
 class Sale < ApplicationRecord
     validates :cod, uniqueness: true
     validates :detail, presence: true
-    validates :category, inclusion: { in: %w(uno dos tres cuatro cinco), 
-    message: "%{value} is not a valid category" }
-    validates :value, numericality: { only_integer: true }
-    validates :discount, numericality: { only_integer: true, :less_than_or_equal_to = 40 }
+    validates :category, inclusion: { in: [1, 2, 3, 4, 5]}
+    validates_numericality_of :value, greater_than_or_equal_to: 0, only_integer: true
+    validates_numericality_of :discount, less_than_or_equal_to: 40, greater_than_or_equal_to: 0, only_integer: true
 end
-
-
