@@ -28,7 +28,7 @@
 
 - En la vista *new* se debe generar un formulario de ingreso de venta. :heavy_check_mark:
 
-- El formulario debe ser generado utilizando el helper *form_with* asociado al modelo *Sale* y debe contener: :x:
+- El formulario debe ser generado utilizando el helper *form_with* asociado al modelo *Sale* y debe contener: :heavy_check_mark:
 
 	 - Un *input* tipo númerico para el código.
     - Un *textarea* para el detalle de la venta.
@@ -38,7 +38,7 @@
     - Un *checkbox* para la opción "Exento de IVA".
     - **Cada input debe ir acompañado de un label**.
 
-- En el modelo *Sale* se debe validar que: :x:
+- En el modelo *Sale* se debe validar que: :heavy_check_mark:
 
     - El campo *cod* debe ser único (**uniqueness**)
     - El detalle debe estar presente (**presence**)
@@ -51,7 +51,7 @@
     - El campo *value* debe ser entero y positivo (**numericality**).
     - El campo *discount* debe ser entero, positivo y menor o igual a 40.
 
-- El método *sales#create* debe recibir los parámetros desde el formulario y realizar las siguientes instrucciones: :x:
+- El método *sales#create* debe recibir los parámetros desde el formulario y realizar las siguientes instrucciones: :heavy_check_mark:
 
     - Aplicar el descuento al valor.
 
@@ -63,7 +63,7 @@
 
     - Almacenar un nuevo registro de venta.
 
-- Crear la ruta, el método y la vista para la página de redirección (**sales#done**). :x:
+- Crear la ruta, el método y la vista para la página de redirección (**sales#done**). :heavy_check_mark:
 
 - El método *sales#create* debe redirigir a sales/done. *Hint: utiliza el prefijo que arroja **rake routes***. :x:
 
