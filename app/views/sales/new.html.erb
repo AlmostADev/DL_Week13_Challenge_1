@@ -1,0 +1,22 @@
+<%= form_with model: @sale, local: true do |s| %>
+    <%= s.label :cod, "COD" %>
+    <%= s.number_field :cod %>
+
+    <%= s.label :detail, "Detail" %>
+    <%= s.text_area :detail %>
+
+    <%= s.label :category, "Category" %>
+    <%= s.text_field :category %>
+
+    <%= s.label :value, "Value" %>
+    <%= s.number_field :value %>
+
+    <%= s.label :discount, "Discount" %>
+    <%= s.number_field :discount %>
+
+    <%= s.label :tax, "Exento de IVA" %>
+    <%= s.check_box :tax %>
+
+    <%= s.text_field :title %>
+    <%= s.submit "Enviar"%>
+<% end %>
